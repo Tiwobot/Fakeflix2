@@ -21,10 +21,10 @@ const SplashAnimation = () => {
 	useEffect(() => {
 		setTimeout(() => {
 			soundNotification();
-		}, 2)
+		}, 1)
 		setTimeout(() => {
 			history.push('/browse')
-		}, 5)
+		}, 1)
 	}, [history])
 
 	return (
