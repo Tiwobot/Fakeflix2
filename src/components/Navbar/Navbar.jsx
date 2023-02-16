@@ -39,7 +39,7 @@ const Navbar = () => {
 				exit="hidden"
 			>
 				<Link to="/">
-					<img className="Navbar__logo" src={"tudepIco_192.png"} alt="" />
+					<img className="Navbar__logo" src={"tudepIco_512cropped.png"} alt="" />
 				</Link>
 				{width >= 1024 ? (
 					<ul className="Navbar__primarynav Navbar__navlinks">
