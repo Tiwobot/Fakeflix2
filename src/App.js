@@ -45,10 +45,6 @@ const App = () => {
                         <Redirect to="/login" />
                     </Route>
                     <Route
-                        path="/splash"
-                        component={SplashAnimation}
-                    />
-                    <Route
                         path="/play"
                         component={PlayAnimation}
                     />
