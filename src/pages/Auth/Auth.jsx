@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 import { selectAuthErrors } from "../../redux/auth/auth.selectors";
 
 const Auth = () => {
-	const [isSignedUp, setIsSignedUp] = useState(true);
+	const [isSignedUp] = useState(true);
 	const authError = useSelector(selectAuthErrors);
 
 	return (
@@ -41,8 +41,8 @@ const Auth = () => {
 						{isSignedUp
 							? ``
 							: ""}
-						<span className="toggler" onClick={() => null }>
-							{isSignedUp ? "Deprem Sonrası Envanter Kontrol Sistemi" : "Deprem Sonrası Envanter Kontrol Sistemi"}
+						<span className="toggler" onClick={() => null}>
+							{isSignedUp ? "Tudep - Deprem Sonrası Stok Takip Sistemi" : "Tudep - Deprem Sonrası Stok Takip Sistemi"}
 						</span>
 					</motion.small>
 				</motion.div>
