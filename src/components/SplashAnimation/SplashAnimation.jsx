@@ -21,7 +21,7 @@ const SplashAnimation = () => {
 	useEffect(() => {
 		setTimeout(() => {
 			soundNotification();
-		}, 1)
+		}, 7500)
 		setTimeout(() => {
 			history.push('/browse')
 		}, 1)
