@@ -117,7 +117,7 @@ const App = () => {
                     <Route
                         exact
                         path="/login"
-                        render={() => currentUser ? <Redirect to="/search"/> : <Auth />}
+                        render={() => currentUser ? <Redirect to="/browse"/> : <Auth />}
                     />
                     <Route path="*">
                         <Redirect to="/" />
