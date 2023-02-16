@@ -12,7 +12,6 @@ import Auth from "./pages/Auth/Auth";
 import Search from "./pages/Search/Search";
 import Category from "./pages/Category/Category";
 import DetailModal from "./components/DetailModal/DetailModal";
-import SplashAnimation from "./components/SplashAnimation/SplashAnimation";
 import { selectCurrentUser } from './redux/auth/auth.selectors';
 import { selectSearchResults } from "./redux/search/search.selectors";
 import { checkUserSession } from "./redux/auth/auth.actions";
@@ -44,10 +43,6 @@ const App = () => {
                     >
                         <Redirect to="/login" />
                     </Route>
-                    <Route
-                        path="/splash"
-                        component={SplashAnimation}
-                    />
                     <Route
                         path="/search"
                         render={() => currentUser
