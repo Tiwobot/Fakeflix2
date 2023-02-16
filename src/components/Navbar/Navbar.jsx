@@ -5,7 +5,6 @@ import useScroll from "../../hooks/useScroll";
 import useOutsideClick from "../../hooks/useOutsideClick";
 import { motion } from "framer-motion";
 import { navbarFadeInVariants } from "../../motionUtils";
-import { PROFILE_PIC_URL } from "../../requests";
 import { FaCaretDown } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import Searchbar from "../Searchbar/Searchbar";
@@ -40,7 +39,7 @@ const Navbar = () => {
 				exit="hidden"
 			>
 				<Link to="/">
-					<img className="Navbar__logo" src={"tudepIco_512.png"} alt="" />
+					<img className="Navbar__logo" src={"tudepIco_192.png"} alt="" />
 				</Link>
 				{width >= 1024 ? (
 					<ul className="Navbar__primarynav Navbar__navlinks">
@@ -124,11 +123,7 @@ const Navbar = () => {
 							className={`Navbar__navprofile ${profileNav && "active"}`}
 							onClick={() => setProfileNav(!profileNav)}
 						>
-							<img
-								className="Navbar__navprofile--avatar Navbar__navprofile--toggler"
-								src={currentUser && currentUser.photoURL ? currentUser.photoURL : PROFILE_PIC_URL}
-								alt="Profile Picture"
-							/>
+							
 							<FaCaretDown className="Navbar__navprofile--toggler Navbar__navprofile--caret" />
 							<div className={`Navbar__navprofile--content ${profileNav ? "active" : ""}`}>
 								{profileNav && (
