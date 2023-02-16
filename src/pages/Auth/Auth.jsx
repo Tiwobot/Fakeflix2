@@ -41,8 +41,8 @@ const Auth = () => {
 						{isSignedUp
 							? ``
 							: ""}
-						<span className="toggler" onClick={() => setIsSignedUp(!isSignedUp)}>
-							{isSignedUp ? "" : ""}
+						<span className="toggler" onClick={() => null }>
+							{isSignedUp ? "Deprem Sonrası Envanter Kontrol Sistemi" : "Deprem Sonrası Envanter Kontrol Sistemi"}
 						</span>
 					</motion.small>
 				</motion.div>
