@@ -23,9 +23,6 @@ const Auth = () => {
 		>
 			<div className="Auth__opacityLayer" />
 			<div className="Auth__bgLayer" style={{ backgroundImage: `url(${SIGNIN_BGIMG_URL})` }} />
-			<Link to="/" className="Auth__logo">
-				<img className="Auth__logo--img" src={LOGO_URL} alt="Fakeflix_logo" />
-			</Link>
 			<motion.div
 				className="Auth__content"
 				variants={modalVariants}
@@ -43,14 +40,6 @@ const Auth = () => {
 					{isSignedUp ? <SignIn /> : <SignUp />}
 					{authError && <motion.p variants={authFadeInUpVariants} className='Auth__content--errors'>{authError}</motion.p>}
 					<motion.hr variants={authFadeInUpVariants} className="Auth__content--divider" />
-					<motion.small variants={authFadeInUpVariants} className="Auth__content--toggleView">
-						{isSignedUp
-							? `Haven't you registered yet? `
-							: "Do you already have an account? "}
-						<span className="toggler" onClick={() => setIsSignedUp(!isSignedUp)}>
-							{isSignedUp ? "Sign Up" : "Sign In"}
-						</span>
-					</motion.small>
 				</motion.div>
 			</motion.div>
 		</motion.div>
