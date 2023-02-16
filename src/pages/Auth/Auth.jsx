@@ -32,7 +32,7 @@ const Auth = () => {
 			>
 				<motion.div variants={staggerOne} initial="initial" animate="animate" exit="exit">
 					<motion.h2 variants={authFadeInUpVariants} className="Auth__content--title">
-						{isSignedUp ? "Sign In" : "Sign Up"}
+						{isSignedUp ? "Tudep" : "Tudep"}
 					</motion.h2>
 					{isSignedUp ? <SignIn /> : <SignUp />}
 					{authError && <motion.p variants={authFadeInUpVariants} className='Auth__content--errors'>{authError}</motion.p>}
