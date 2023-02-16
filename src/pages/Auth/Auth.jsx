@@ -42,7 +42,7 @@ const Auth = () => {
 							? ``
 							: ""}
 						<span className="toggler" onClick={() => setIsSignedUp(!isSignedUp)}>
-							{isSignedUp ? "Sign Up" : "Sign In"}
+							{isSignedUp ? "" : ""}
 						</span>
 					</motion.small>
 				</motion.div>
