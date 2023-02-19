@@ -60,7 +60,7 @@ const Navbar = () => {
 						</li>
 						<li className="Navbar__navlinks--link">
 							<NavLink to="/popular" activeClassName="activeNavLink">
-								New & Popular
+								Diğer
 							</NavLink>
 						</li>
 						<li className="Navbar__navlinks--link">
@@ -101,7 +101,7 @@ const Navbar = () => {
 									</li>
 									<li className="Navbar__navlinks--link">
 										<NavLink to="/popular" activeClassName="activeNavLink">
-											New & Popular
+											Diğer
 										</NavLink>
 									</li>
 									<li className="Navbar__navlinks--link">
