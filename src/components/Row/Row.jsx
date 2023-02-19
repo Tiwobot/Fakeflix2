@@ -80,7 +80,7 @@ const Row = ({ selector, title, genre, isLarge }) => {
 
 	return (
 		<div className="Row">
-			{error && <div className='Row__not-loaded'>Oops, an error occurred.</div>}
+			{error && <div className='Row__not-loaded'>Row için API bağlantısında problem var</div>}
 			{loading ?
 				(
 					<div className='Row__not-loaded'>

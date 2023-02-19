@@ -52,7 +52,7 @@ const Banner = ({ type }) => {
 				className="Banner__loadsection"
 			>
 				{loading && <SkeletonBanner />}
-				{error && <div className="errored">API bağlantısında problem var.</div>}
+				{error && <div className="errored">Banner için API bağlantısında problem var.</div>}
 			</motion.section>
 
 			{!loading && finalData && (
