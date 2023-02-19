@@ -45,17 +45,17 @@ const Navbar = () => {
 					<ul className="Navbar__primarynav Navbar__navlinks">
 						<li className="Navbar__navlinks--link">
 							<NavLink to="/browse" activeClassName="activeNavLink">
-								Home
+								Giriş
 							</NavLink>
 						</li>
 						<li className="Navbar__navlinks--link">
 							<NavLink to="/tvseries" activeClassName="activeNavLink">
-								TV Series
+								Gıda
 							</NavLink>
 						</li>
 						<li className="Navbar__navlinks--link">
 							<NavLink to="/movies" activeClassName="activeNavLink">
-								Movies
+								Giyim
 							</NavLink>
 						</li>
 						<li className="Navbar__navlinks--link">
@@ -65,7 +65,7 @@ const Navbar = () => {
 						</li>
 						<li className="Navbar__navlinks--link">
 							<NavLink to="/mylist" activeClassName="activeNavLink">
-								My list
+								Favorilerim
 							</NavLink>
 						</li>
 					</ul>
@@ -86,17 +86,17 @@ const Navbar = () => {
 								>
 									<li className="Navbar__navlinks--link">
 										<NavLink to="/browse" activeClassName="activeNavLink">
-											Home
+											Giriş
 										</NavLink>
 									</li>
 									<li className="Navbar__navlinks--link">
 										<NavLink to="/tvseries" activeClassName="activeNavLink">
-											TV Series
+											Gıda
 										</NavLink>
 									</li>
 									<li className="Navbar__navlinks--link">
 										<NavLink to="/movies" activeClassName="activeNavLink">
-											Movies
+											Giyim
 										</NavLink>
 									</li>
 									<li className="Navbar__navlinks--link">
@@ -106,7 +106,7 @@ const Navbar = () => {
 									</li>
 									<li className="Navbar__navlinks--link">
 										<NavLink to="/mylist" activeClassName="activeNavLink">
-											My list
+											Favorilerim
 										</NavLink>
 									</li>
 								</ul>
