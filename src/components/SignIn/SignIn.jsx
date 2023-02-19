@@ -35,7 +35,7 @@ const SignIn = () => {
 					type="text"
 					name="email"
 					placeholder="E-mail"
-					validationMessage="Please enter a valid email address."
+					validationMessage="Geçerli bir e-mail adresi giriniz."
 					validation={register({
 						required: true,
 						pattern: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
@@ -48,8 +48,8 @@ const SignIn = () => {
 				<InputField
 					type="password"
 					name="password"
-					placeholder="Password"
-					validationMessage="The password should have a length between 6 and 30 characters."
+					placeholder="Şifre"
+					validationMessage="Şifre 6 ile 30 karakter arası olmalıdır."
 					validation={register({
 						required: true,
 						minLength: 6,
@@ -65,7 +65,7 @@ const SignIn = () => {
 				className={`SignIn__form--button button__submit ${isLoading && 'loading'}`}
 				disabled={isLoading}
 			>
-				{isLoading ? <Loader /> : 'Sign in'}
+				{isLoading ? <Loader /> : 'Giriş yap'}
 			</motion.button>
 			<motion.button
 				type="button"
@@ -75,7 +75,7 @@ const SignIn = () => {
 				disabled={isLoading}
 			>
 				{!isLoading && <FcGoogle />}
-				{isLoading ? <Loader /> : 'Sign in with Google'}
+				{isLoading ? <Loader /> : 'Google ile giriş'}
 			</motion.button>
 			<motion.button
 				type="button"
@@ -84,7 +84,7 @@ const SignIn = () => {
 				onClick={() => dispatch(anonymousSignInStart())}
 				disabled={isLoading}
 			>
-				{isLoading ? <Loader /> : 'Sign in anonymously'}
+				{isLoading ? <Loader /> : 'Anonim olarak giriş'}
 			</motion.button>
 		</motion.form>
 	)
