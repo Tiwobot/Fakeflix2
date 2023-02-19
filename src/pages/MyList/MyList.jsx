@@ -37,7 +37,7 @@ const MyList = () => {
                     ))
                     : (
                         <h2 className="MyList__title">
-                            Sorry, you don&apos;t have a favourite movie or tv-show yet.
+                            Üzgünüz, hiç favori ürününüz bulunmamakta.
                         </h2>
                     )
                 }
